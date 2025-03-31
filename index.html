@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalleryGrid - Beautiful Image Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>GalleryGrid</h1>
+        <div class="controls">
+            <div class="search">
+                <input type="text" placeholder="Search images..." id="searchInput">
+            </div>
+            <div class="filter">
+                <select id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="nature">Nature</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="people">People</option>
+                    <option value="animals">Animals</option>
+                </select>
+            </div>
+            <div class="sort">
+                <select id="sortSelect">
+                    <option value="default">Default</option>
+                    <option value="random">Random</option>
+                    <option value="popular">Popular</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-grid" id="galleryGrid"></div>
+        <div class="loading-spinner" id="loadingSpinner"></div>
+        <button class="load-more" id="loadMoreBtn">Load More</button>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img class="lightbox-img" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
