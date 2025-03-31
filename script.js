@@ -14,21 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPage = 1;
     let isLoading = false;
     let images = [];
-
+    let url = "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     // Sample image data with different categories
     const imageData = [
-        { id: 1, url: 'https://source.unsplash.com/random/800x600/?nature', title: 'Beautiful Nature', category: 'nature' },
-        { id: 2, url: 'https://source.unsplash.com/random/800x600/?building', title: 'Modern Architecture', category: 'architecture' },
-        { id: 3, url: 'https://source.unsplash.com/random/800x600/?portrait', title: 'Portrait Photography', category: 'people' },
-        { id: 4, url: 'https://source.unsplash.com/random/800x600/?wildlife', title: 'Wildlife', category: 'animals' },
-        { id: 5, url: 'https://source.unsplash.com/random/800x600/?mountain', title: 'Mountain View', category: 'nature' },
-        { id: 6, url: 'https://source.unsplash.com/random/800x600/?city', title: 'City Skyline', category: 'architecture' },
-        { id: 7, url: 'https://source.unsplash.com/random/800x600/?dog', title: 'Cute Dog', category: 'animals' },
-        { id: 8, url: 'https://source.unsplash.com/random/800x600/?beach', title: 'Tropical Beach', category: 'nature' },
-        { id: 9, url: 'https://source.unsplash.com/random/800x600/?cat', title: 'Sleeping Cat', category: 'animals' },
-        { id: 10, url: 'https://source.unsplash.com/random/800x600/?family', title: 'Happy Family', category: 'people' },
-        { id: 11, url: 'https://source.unsplash.com/random/800x600/?waterfall', title: 'Waterfall', category: 'nature' },
-        { id: 12, url: 'https://source.unsplash.com/random/800x600/?bridge', title: 'Historic Bridge', category: 'architecture' }
+        { id: 1, url: url, title: 'Beautiful Nature', category: 'nature' },
+        { id: 2, url:url, title: 'Modern Architecture', category: 'architecture' },
+        { id: 3, url: url, title: 'Portrait Photography', category: 'people' },
+        { id: 4, url:url, title: 'Wildlife', category: 'animals' },
+        { id: 5, url: url, title: 'Mountain View', category: 'nature' },
+        { id: 6, url: url, title: 'City Skyline', category: 'architecture' },
+        { id: 7, url: url, title: 'Cute Dog', category: 'animals' },
+        { id: 8, url: url, title: 'Tropical Beach', category: 'nature' },
+        { id: 9, url: url, title: 'Sleeping Cat', category: 'animals' },
+        { id: 10, url:url, title: 'Happy Family', category: 'people' },
+        { id: 11, url: url, title: 'Waterfall', category: 'nature' },
+        { id: 12, url: url, title: 'Historic Bridge', category: 'architecture' }
     ];
 
     // Initialize gallery
